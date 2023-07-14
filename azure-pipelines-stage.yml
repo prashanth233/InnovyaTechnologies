@@ -1,0 +1,41 @@
+trigger:
+    - release1.0    
+    
+pool:
+    vmImage: 'windows-latest'
+
+steps:
+    - task: CmdLine@2
+      inputs:
+        script: |
+          echo Replace index.html
+          cd $(System.DefaultWorkingDirectory)/public
+          move index.release.html index.html
+          exit
+
+    - task: NodeTool@0
+      inputs:
+          versionSpec: '10.x'
+      displayName: 'Install Node.js'
+
+    - script: |
+          npm install
+      displayName: 'Install dependencies'
+    - script:    
+          npm run lint 
+      displayName: 'npm lint'
+    - script:    
+          npm run build
+      displayName: 'npm build'
+
+    - task: CopyFiles@2
+      inputs:
+          contents: 'build/**' 
+          targetFolder: $(Build.ArtifactStagingDirectory)
+      displayName: 'Copy archives to artifacts staging directory'
+
+    - task: PublishBuildArtifacts@1
+      inputs:
+          path: $(Build.ArtifactStagingDirectory)
+          artifact: package
+      displayName: 'Publish artifacts'
