@@ -1,20 +1,2 @@
 # Introduction 
-TODO: Give a short introduction of your project. Let this section explain the objectives or the motivation behind this project. 
-
-# Getting Started
-TODO: Guide users through getting your code up and running on their own system. In this section you can talk about:
-1.	Installation process
-2.	Software dependencies
-3.	Latest releases
-4.	API references
-
-# Build and Test
-TODO: Describe and show how to build your code and run the tests. 
-
-# Contribute
-TODO: Explain how other users and developers can contribute to make your code better. 
-
-If you want to learn more about creating good readme files then refer the following [guidelines](https://docs.microsoft.com/en-us/azure/devops/repos/git/create-a-readme?view=azure-devops). You can also seek inspiration from the below readme files:
-- [ASP.NET Core](https://github.com/aspnet/Home)
-- [Visual Studio Code](https://github.com/Microsoft/vscode)
-- [Chakra Core](https://github.com/Microsoft/ChakraCore)
+As a front-end developer, showcasing my proficiency in utilizing ReactJS to create user-friendly interfaces for websites. As an intern, I had the opportunity to contribute to this project and demonstrate my meticulous testing skills, ensuring the code's quality and resolving any issues with 100% accuracy. Throughout this experience, I actively collaborated with managers and team members, participating in daily standup meetings to provide progress updates and contribute to the timely completion of tasks. My attention to detail, strong problem-solving abilities, and dedication to teamwork were key factors in my success. Join me on this journey as I continue to evolve and further develop my skills in the world of front-end development.
